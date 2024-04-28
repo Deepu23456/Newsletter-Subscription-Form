@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    color: hsl(234, 29%, 20%);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(235, 18%, 26%);
+    flex-direction: column;
+}
+
+.success-message {
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 30px 50px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.success-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.success-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.success-heading h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.success-heading p {
+    font-size: 12px;
+}
+
+.success-btn {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -2px 3px 16px 3px rgba(255, 0, 30, 0.3);
+}
+
+.success-btn button {
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    background-color: #FF6157;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+.container {
+    height: 450px;
+    width: 650px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+.info-container {
+    /* background-color: red; */
+    width: 55%;
+    height: 100%;
+    margin-right: 16px;
+    padding: 50px 30px;
+}
+
+.image-container {
+    width: 45%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading-para h1{
+    margin-bottom: 14px;
+    font-size: 40px;
+}
+
+
+.heading-para p{
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.list-container {
+    margin-top: 20px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.list p {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.email-container {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label-error {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label-error span {
+    color: rgba(255, 0, 0, 0.695);
+    font-size: 10px;
+    font-weight: 700;
+    display: none;
+}
+
+label {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+#email {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid hsl(231, 7%, 60%);
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.submitbtn {
+    padding: 14px 16px;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.error #email {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.096);
+}
+
+.error #email::placeholder {
+    color: rgba(255, 0, 0, 0.695);
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.attribution a {
+    color:  hsl(231, 7%, 60%);
+}
+
+@media (max-width: 700px){
+    .container {
+        margin-top: 20px;
+        height: 700px;
+        width: 300px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden; 
+    }
+
+    .info-container {
+        height: 55%;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .image-container {
+        height: 45%;
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .heading-para h1{
+        margin-top: -10px;
+        margin-bottom: 12px;
+        font-size: 30px;
+    }
+    
+    
+    .heading-para p{
+        margin-top: -5px;
+        margin-bottom: 4px;
+        font-size: 10px;
+    }
+    
+    .list-container {
+        margin-top: 12px;
+    }
+    
+    .list {
+        margin-bottom: 5px;
+    }
+    
+    .list p {
+        font-size: 10px;
+        margin-left: 6px;
+    }
+    
+    .email-container {
+        margin-top: 20px;
+        gap: 3px;
+    }
+
+    #email {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    
+    .success-message {
+        height: 350px;
+        width: 350px;
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 30px 50px;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+}

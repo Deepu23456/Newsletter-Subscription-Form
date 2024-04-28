@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="success-message">
+      <div class="success-image">
+        <img src="./assets/images/icon-list.svg" alt="">
+      </div>
+      <div class="success-heading">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span><b></b></span>. Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <div class="success-btn">
+        <button>Dismiss Message</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="info-container">
+        <div class="heading-para">
+          <h1> Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div class="list-container">
+           <div class="list">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>Product discovery and building what matters</p>
+           </div>
+           <div class="list">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>Measuring to ensure updates are a success</p>
+           </div>
+           <div class="list">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>And much more!</p>
+           </div>
+        </div>
+        <div class="email-container">
+          <div class="label-error">
+            <label for="email">Email address</label>
+            <span>Valid email required</span>
+          </div>
+          <input type="email" name="email" id="email" placeholder="email@company.com" required pattern ="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+          <button class="submitbtn">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Deepu23456">Deepika Singh</a>.
+    </div>
+  </main>
+  
+</body>
+
+</html>
+
